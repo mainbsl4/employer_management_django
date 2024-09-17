@@ -10,7 +10,6 @@ class Employees(models.Model):
     short_description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    profile_picture = models.ImageField(upload_to='profiles/' , default='profiles/default.jpg')
 
 
     def __str__(self):

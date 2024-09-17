@@ -12,7 +12,6 @@ class EmployeeForm(forms.ModelForm):
             "salary",
             "designation",
             "short_description",
-            "profile_picture",
         ]
 
 
@@ -29,9 +28,6 @@ class UpdateEmployeeForm(forms.ModelForm):
         ]
 
         widgets = {
-            'salary': forms.TextInput(attrs={'readonly': True}),
-            'designation': forms.TextInput(attrs={'readonly': True}),
+            "salary": forms.TextInput(attrs={"readonly": True}),
+            "designation": forms.TextInput(attrs={"readonly": True}),
         }
-
-
-
