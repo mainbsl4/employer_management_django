@@ -11,17 +11,15 @@
             <img class="h-32 w-32 bg-white p-2 rounded-full" src="{{ employer.profile_picture.url }}" alt="{{ employer.name }}'s profile picture" />
 
         </div> -->
-        <div class=" ">
+        <div class=" py-3">
             <div class="text-center px-14">
-                <h2 class="text-gray-800 text-3xl font-bold">{{ employer.name }}</h2>
-                <p class="text-gray-400 mt-2 hover:text-blue-500">{{ employer.designation }}</a>
-                <p class="text-gray-800 text-3xl font-bold">{{ employer.address }}</p>
-                <p class="text-gray-400 mt-2 hover:text-blue-500">{{ employer.phone_no }}</a>
-                <p class="mt-2 text-gray-500 text-sm">{{ employer.address }}</p>
-                <p class="mt-2 text-gray-500 text-sm">{{ employer.phone_no }}</p>
-                <p class="mt-2 text-gray-500 text-sm">{{ employer.salary }}</p>
-                <p class="mt-2 text-gray-500 text-sm">{{ employer.designation }}</p>
-                <p class="mt-2 text-gray-500 text-sm">{{ employer.short_description }}</p>
+                <h2 class="text-gray-800 text-3xl font-bold">Name: {{ employer.name }}</h2>
+                <p class="text-gray-400 mt-2 hover:text-blue-500">Designation: {{ employer.designation }}</a>
+                <p class="text-gray-800 ">Address: {{ employer.address }}</p>
+                <p class="text-gray-400 mt-2 hover:text-blue-500">Phone No: {{ employer.phone_no }}</a>
+                <p class="mt-2 text-gray-500 text-sm">Address: {{ employer.address }}</p>
+                <p class="mt-2 text-gray-500 text-sm">Salary: {{ employer.salary }}</p>
+                <p class="mt-2 text-gray-500 text-sm">Short Description: {{ employer.short_description }}</p>
             </div>
         </div>
     </div>
